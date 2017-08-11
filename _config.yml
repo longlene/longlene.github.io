@@ -2,7 +2,7 @@ title: Tiny Matrix
 author: loong0
 description: >
   C/C++, Go, Ruby, Common Lisp
-baseurl: "/blog"
+baseurl: ""
 url: "http://longlene.me"
 twitter_username: longlene
 github_username:  longlene

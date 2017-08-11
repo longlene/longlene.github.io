@@ -6,6 +6,5 @@ permalink: /about/
 
 I'm a C++ backend programmer.
 
-{% include icon-github.html username="longlene" %} /
-longlene
+{% include icon-github.html username="longlene" %}
 
