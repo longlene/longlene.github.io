@@ -1,0 +1,9 @@
+---
+layout: post
+title: "2014硬件清单"
+date: 2015-08-19 01:56:24 +0800
+comments: true
+categories:
+---
+去年一年买了不少硬件
+Raspberry Pi 2

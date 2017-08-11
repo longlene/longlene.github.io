@@ -1,0 +1,27 @@
+---
+layout: post
+title: "VoCore"
+date: 2015-08-25 21:47:19 +0800
+comments: true
+categories:
+---
+入手了一个VoCore的路由器，开始折腾。
+
+自己编译OpenWrt
+
+make menuconfig, select the right target
+
+target/linux/ramips/dts/VOCORE.dts
+update VOCORE.dts from 0x7B0000 to 0xFB0000 to fit 16MB flash
+
+
+Target System: Ralink RT288x/RT3xxx
+Subtarget: RT3x5x/RT5350 based boards
+Target Profile: VoCore
+
+
+VoCore路由器自带CP2102的芯片，可以与电脑通过串口接通，所以理论上是刷不死的。
+Funtoo内核编译上CP2102的驱动后，如果普通用户要连接VoCore，需要将该用户加入uucp用户组。
+将VoCore通过usb供电线连接到电脑，然后启动minicom，波特率改为57600。然后拔出电源线重新插入。可以看到启动
+界面。将“Hardware Control Flow”改为no，即可使用键盘输入，选择8即可进入恢复模式。
+用网线连接VoCore，设置静态ip：192.168.1.3，即可打开http://192.168.1.1/index.html 进行升级。
