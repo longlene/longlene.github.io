@@ -15,3 +15,7 @@ diskutil unmountDisk /dev/disk2
 brew install macvim --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python
 
 launchctl load ~/Library/LaunchAgents/org.shadowsocks.osx.plist # 启动shadowsocks客户端
+
+或者使用`brew service shadowsocks-libev`
+
+https://github.com/litchie/build4ios
