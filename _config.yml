@@ -1,11 +1,9 @@
-title: Tiny Matrix
+title: Tiny Logs
 author: loong0
 description: >
-  C/C++, Go, Ruby, Common Lisp
-baseurl: ""
-url: "http://longlene.me"
-twitter_username: longlene
-github_username:  longlene
+  Scraps and Drops in Life and Work
+url: "https://longlene.github.io"
+github_username: longlene
 
 # Build settings
 markdown: kramdown

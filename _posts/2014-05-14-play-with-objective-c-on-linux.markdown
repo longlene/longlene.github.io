@@ -39,9 +39,7 @@ int main(int argc, char *argv[])
 
 
 On OS X, We can compile the file by the following command:  
-`bash
-clang -o hello hello.m -framework Foundation
-`
+`clang -o hello hello.m -framework Foundation`
 
 On Linux, commands like this:  
 `clang -o hello hello.m -lFoundation`

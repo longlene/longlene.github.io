@@ -5,17 +5,18 @@ date: 2015-08-20 06:49:18 +0800
 comments: true
 categories:
 ---
-安装homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+Install homebrew
+`ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"`
 
-卸载U盘
-diskutil unmountDisk /dev/disk2
+eject the USB-disk
+`diskutil unmountDisk /dev/disk2`
 
-安装MacVIM
-brew install macvim --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python
+install the MacVIM
+`brew install macvim --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python`
 
-launchctl load ~/Library/LaunchAgents/org.shadowsocks.osx.plist # 启动shadowsocks客户端
+启动shadowsocks客户端
+`launchctl load ~/Library/LaunchAgents/org.shadowsocks.osx.plist` 
 
 或者使用`brew service shadowsocks-libev`
 
-https://github.com/litchie/build4ios
+https://github.com/litchie/build4ios autoconf库macOS编译脚本
