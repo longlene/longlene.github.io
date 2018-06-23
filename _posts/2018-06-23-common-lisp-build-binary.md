@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Common-Lisp-Build-Binary
+title: Common Lisp Build Binary
 ---
 在大家的印象中，Common Lisp一直是个解释型语言；但是其实各个实现基本都实现了导出可执行文件的功能。
 
@@ -17,13 +17,13 @@ quicklisp可以自动查找其local-projects目录中的项目，能够简化开
 
 3. 编译项目
 进入~/.quicklisp/local-projects/目录，新建项目:hello
-```shell
+```bash
 mkcd ~/.quicklisp/local-projects/hello
 vim hello.asd
 ```
 
 为了最小化，代码直接写在asd文件中：hello.asd
-```lisp
+```common-lisp
 (defsystem hello
  :build-operation program-op
  :build-pathname "hello"
@@ -42,9 +42,22 @@ vim hello.asd
 ```
 
 生成可执行文件
-```shell
+```bash
 sbcl --eval '(asdf:make :hello)'
 ```
 
 执行命令后会在hello目录生成可执行文件：hello
+
+查看hello的链接情况：`ldd hello`
+输出如下：
+```bash
+        linux-vdso.so.1 (0x00007ffc595f4000)
+        libdl.so.2 => /lib64/libdl.so.2 (0x00007fa195895000)
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fa195679000)
+        libz.so.1 => /lib64/libz.so.1 (0x00007fa195462000)
+        libm.so.6 => /lib64/libm.so.6 (0x00007fa19515f000)
+        libc.so.6 => /lib64/libc.so.6 (0x00007fa194dc6000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007fa195a99000)
+```
+
 
