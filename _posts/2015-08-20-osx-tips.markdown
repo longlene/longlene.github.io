@@ -14,9 +14,11 @@ eject the USB-disk
 install the MacVIM
 `brew install macvim --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python`
 
-启动shadowsocks客户端
+start shadowsocks-libev
 `launchctl load ~/Library/LaunchAgents/org.shadowsocks.osx.plist` 
 
-或者使用`brew service shadowsocks-libev`
+or use
+`brew service shadowsocks-libev`
 
-https://github.com/litchie/build4ios autoconf库macOS编译脚本
+https://github.com/litchie/build4ios autoconf library build script
+
