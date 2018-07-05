@@ -3,7 +3,7 @@ layout: post
 title: "Notes on iPhone AR"
 date: 2014-07-27 19:34:58 +0800
 comments: true
-categories: Programming, AR
+categories: programming,AR
 ---
 
 20140706_005900  
