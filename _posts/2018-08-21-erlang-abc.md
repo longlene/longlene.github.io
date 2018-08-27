@@ -186,6 +186,13 @@ Primitives
 ----------
 
 ### Case
+```erlang
+case Expression of
+    Pattern1 [when Guard1] -> Expr_seq1;
+    Pattern2 [when Guard2] -> Expr_seq2;
+    ...
+end
+```
 
 ### If
 
