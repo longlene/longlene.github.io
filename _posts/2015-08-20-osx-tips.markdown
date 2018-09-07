@@ -5,16 +5,16 @@ date: 2015-08-20 06:49:18 +0800
 comments: true
 categories:
 ---
-Install homebrew
+- Install homebrew
 `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"`
 
-eject the USB-disk
+- eject the USB-disk
 `diskutil unmountDisk /dev/disk2`
 
-install the MacVIM
+- install the MacVIM
 `brew install macvim --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python`
 
-start shadowsocks-libev
+- start shadowsocks-libev
 `launchctl load ~/Library/LaunchAgents/org.shadowsocks.osx.plist` 
 
 or use

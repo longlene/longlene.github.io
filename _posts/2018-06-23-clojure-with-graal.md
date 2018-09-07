@@ -2,6 +2,7 @@
 layout: post
 title: Clojure with GraalVM
 date: 2018-06-23 19:44:02 +0800
+tags: [clojure, programming]
 ---
 ## 缘起
 最近接触到了GraalVM这个项目，发现非常强大，不仅能够编译java代码，输出可执行文件，而且应该能够输出成为库文件，供C系语言使用。如果能成功的话，以后Java系软件的发布应该能大大简化。

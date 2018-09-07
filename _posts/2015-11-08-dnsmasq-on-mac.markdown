@@ -6,7 +6,7 @@ comments: true
 categories:
 ---
 First, install the dnsmasq:
-```bash
+```sh
 brew install dnsmasq
 cp /usr/local/opt/dnsmasq/dnsmasq.conf.example /usr/local/etc/dnsmasq.conf
 ```

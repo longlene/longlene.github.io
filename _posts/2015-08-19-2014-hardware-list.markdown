@@ -6,4 +6,4 @@ comments: true
 categories:
 ---
 去年一年买了不少硬件
-Raspberry Pi 2
+- Raspberry Pi 2

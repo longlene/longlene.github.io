@@ -2,6 +2,7 @@
 layout: post
 title: jekyll tips
 date: 2018-06-23 12:03:02 +0800
+tags: [jekyll]
 ---
 自从从octopress改用jekyll之后，好久没写blog了。这次重新拾起来，把插件安装好，顺便把使用方法记录下来。
 
