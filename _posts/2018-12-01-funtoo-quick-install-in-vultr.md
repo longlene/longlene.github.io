@@ -44,9 +44,11 @@ gcc -march=native -Q --help=target | grep march
 cd /mnt/funtoo
 
 # download stage3 file
-#wget https://build.funtoo.org/funtoo-current/x86-64bit/generic_64/stage3-latest.tar.xz # for generic 64bit
+# for generic 64bit
+#wget https://build.funtoo.org/funtoo-current/x86-64bit/generic_64/stage3-latest.tar.xz
 
-wget https://build.funtoo.org/funtoo-current/x86-64bit/intel64-haswell/stage3-latest.tar.xz # haswell according to arch check
+# haswell according to arch check
+wget https://build.funtoo.org/funtoo-current/x86-64bit/intel64-haswell/stage3-latest.tar.xz
 
 # extract stage3
 tar xpf stage3-latest.tar.xz
