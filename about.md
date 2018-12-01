@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a C++ backend programmer.
+A C/C++/Erlang programmer.
 
 {% include icon-github.html username="longlene" %}
 
