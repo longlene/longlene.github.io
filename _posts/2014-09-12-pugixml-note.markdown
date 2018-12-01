@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "pugixml Note"
+title: "Pugixml Note"
 date: 2014-09-16 22:02:10 +0800
 comments: true
 categories:

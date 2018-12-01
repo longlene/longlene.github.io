@@ -1,6 +1,6 @@
 ---
 layout: post
-title: gentoo hadoop
+title: Gentoo Hadoop
 ---
 It is very easy to install Hadoop into Funtoo/Gentoo, as I've added hadoop ebuild to my [overlay](https://github.com/longlene/clx).
 

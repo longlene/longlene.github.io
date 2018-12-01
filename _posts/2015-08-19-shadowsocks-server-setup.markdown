@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "shadowsocks服务搭建 "
+title: "Shadowsocks服务搭建"
 date: 2015-08-19 00:49:09 +0800
 comments: true
 categories:

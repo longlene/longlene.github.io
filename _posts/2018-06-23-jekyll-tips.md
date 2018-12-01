@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jekyll tips
+title: Jekyll Tips
 date: 2018-06-23 12:03:02 +0800
 tags: [jekyll]
 ---
