@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Funtoo Quick Install in VPS
+title: Funtoo Quick Install in Vultr
 ---
 This a quick list for installing Funtoo into Vultr VPS.
 # 1. Preparation

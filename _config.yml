@@ -8,9 +8,10 @@ github_username: longlene
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+theme: jekyll-theme-hacker
+#plugins:
+#  - jekyll-feed
+#  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
