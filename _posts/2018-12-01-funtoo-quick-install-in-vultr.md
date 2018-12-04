@@ -88,6 +88,11 @@ EOF
 # add the sets to your box
 emerge -v @tiny
 
+# configure network
+ln -s /etc/init.d/netif.tmpl /etc/init.d/net.eth0
+echo 'template="dhcpcd"' >> /etc/conf.d/net.eth0
+rc-update add net.eth0 default
+
 # grub install
 grub-install --target=i386-pc --no-floppy /dev/vda
 
