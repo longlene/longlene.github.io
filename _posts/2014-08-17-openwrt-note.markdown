@@ -69,12 +69,13 @@ Target Profile 选择我自己的路由器 TL-WR720N
 6. 编译
 `make download` # 下载源代码
 `make` # 执行make命令进行编译
+编译进程会下载源代码到dl目录
 可以使用如下命令编译，可以打印出详细的编译信息
 `make V=s` 或者 `make V=99`
 `make package/cups/compile V=s` # 编译单个包
 
 7. 刷路由
-生成的固件在bin/下  
+生成的固件在bin/targets下  
 factory文件是用于刷带有原生系统的路由，sysupgrade是用于已经刷了openwrt的路由
 将固件上传到路由器的/tmp目录，使用sysupgrade升级即可
 这里执行升级操作：  
@@ -101,6 +102,7 @@ shadowsocks-libev配置修改
 科学上网方案：
 dnsmasq[ipset] shadownsocks-libev
 
+
 支持nat需要安装mod-nat-extra包，或在OpenWrt编译时启动此模块
 
 挂载U盘
@@ -118,3 +120,15 @@ opkg update如果报错，可能是/etc/opkg.conf某些源路径不存在，去�
 20140818_083300补记，整整两天都在折腾OpenWrt，后面要学的还有很多。OpenWrt本身和嵌入式比较相关，应该好好学习一下。
 
 https://openwrt.org/docs/guide-developer/build-system/use-buildsystem
+
+PS 20190812
+ss-tunnel to redirect DNS query to 1.1.1.1
+
+ipset -N letitgo iphash
+# nat
+iptables -t nat -A PREROUTING -p tcp -m set --match-set letitgo dst -j REDIRECT --to-port 1081
+# local
+iptables -t nat -A OUTPUT -p tcp -m set --match-set letitgo dst -j REDIRECT --to-port 1081
+
+dnsmasq mark name in black list with letitgo and query dns via ss-tunnel, then iptables route data to ss-redir at 1081
+
