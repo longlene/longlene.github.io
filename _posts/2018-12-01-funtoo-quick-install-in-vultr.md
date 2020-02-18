@@ -22,7 +22,7 @@ ssh root@1.2.3.4
 Installation steps:
 ```bash
 # create partition
-fdisk /dev/vda
+fdisk /dev/vda # `n`, then enter and enter, `w`, just only one partition
 
 # crate filesystem
 mkfs.ext4 /dev/vda1

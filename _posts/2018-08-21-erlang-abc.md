@@ -10,8 +10,8 @@ Terms
 ### Numbers: integers and floats
 
 ```erlang
-12 % integer
-$A
+12. % integer()
+$A.
 16#ffff % hexadecimal integer
 3.14159 % float number
 12 + 4
@@ -49,7 +49,7 @@ xyz@H123
 nonode@nohost
 ```
 
-### Variables:
+### Variables: begin with upper-case letter
 
 ```erlang
 Var = 90.
@@ -60,6 +60,7 @@ _
 ### Pids: process identifier
 
 ```erlang
+self().
 spawn/1, 2, 3, 4
 spawn_link/1, 2, 3, 4
 spawn_opt/4
@@ -154,7 +155,7 @@ Modules
 -spec my_function(integer()) -> integer().
 ```
 
-Preprocess
+Preprocess: Macros
 ----------
 
 ```erlang
@@ -205,7 +206,7 @@ if
 end
 ```
 
-Built-in Functions (BIF)
+BIFs: Built-In Functions
 ------------------------
 
 List BIFs
@@ -416,6 +417,7 @@ load_file(File).
 is_loaded(Module).
 ensure_loaded(Module).
 purge(Module).
+soft_purge(Module).
 all_loaded().
 priv_dir(Module).
 ```
@@ -436,6 +438,7 @@ ls(Dir).
 pwd().
 q(). # init:stop().
 i().
+rp(v(-1)).
 memory().
 ```
 
@@ -480,8 +483,9 @@ setup OTP application:
 -behaviour(application). % application:behaviour_info(callbacks)
 
 -export([
-        start/2,
-        stop/1]).
+    start/2,
+    stop/1
+]).
 
 start(_Type, _StartArgs) ->
     ok.
@@ -524,8 +528,7 @@ erl -mnesia dir '"/tmp/mnesia_store"' -name mynode
 mnesia:create_schema([node()]).
 mnesia:start().
 mnesia:info().
-mnesia:create_table(user,
-[{attributes, record_info(fields, user)}])
+mnesia:create_table(user, [{attributes, record_info(fields, user)}])
 ```
 
 Perf

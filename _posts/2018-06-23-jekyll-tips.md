@@ -9,7 +9,10 @@ tags: [jekyll]
 这次安装了jekyll-compose插件来创建草稿和发布文章。
 
 ## 新建博客
-`jekyll new longlene.github.io`
+```bash
+gem install --user-install jekyll
+jekyll new longlene.github.io
+```
 
 ## 安装jekyll-compose
 在Gemfile中增加配置
