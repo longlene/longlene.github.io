@@ -6,15 +6,18 @@ tags: [jekyll]
 ---
 自从从octopress改用jekyll之后，好久没写blog了。这次重新拾起来，把插件安装好，顺便把使用方法记录下来。
 
-这次安装了jekyll-compose插件来创建草稿和发布文章。
+## 安装jekyll到本地
+```bash
+gem install --user-install jekyll bundler
+```
 
 ## 新建博客
 ```bash
-gem install --user-install jekyll
 jekyll new longlene.github.io
 ```
 
-## 安装jekyll-compose
+## Jekyll Compose
+jekyll-compose会额外提供一些命令，用于创建草稿。
 在Gemfile中增加配置
 ```ruby
 group :jekyll_plugins do
